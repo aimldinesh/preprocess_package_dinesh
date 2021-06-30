@@ -1,6 +1,7 @@
 import re
 import os
 import sys
+import json
 
 import pandas as pd
 import numpy as np
@@ -14,6 +15,9 @@ import en_core_web_sm
 from sklearn.feature_extraction.text import CountVectorizer
 
 nlp = en_core_web_sm.load()
+
+path = os.path.dirname(os.path.abspath(__file__))
+abbreviations_path = os.path.join(path, 'data','abbreviations_wordlist.json')
 
 def _get_wordcounts(x):
 	length = len(str(x).split())
