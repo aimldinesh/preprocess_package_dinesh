@@ -2,7 +2,7 @@
 
 Install:
 
-`pip install git+ssh://git@github.com:dkcdatascience/preprocess_package_dinesh.git`
+`pip install git+ssh://git@github.com/dkcdatascience/preprocess_package_dinesh.git`
 
 Uninstall
 
